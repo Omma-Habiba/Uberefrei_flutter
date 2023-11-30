@@ -24,7 +24,7 @@ Le client peut également accéder au google map et choisir un point de destinat
 - **Personnes** : Affichage des ubers avec qui le client peut communiquer
 ![image](https://github.com/Omma-Habiba/Uberefrei_flutter/assets/76633646/f9e73dc8-aab4-4af8-9276-1e3c9c64bf2e)
 
-- **Google map && Paiement** : Le client peut choisir un point de repère (points rouges) sur le map, une fois cliquer sur un des points rouges, ça affiche le pop-up du paiement. Une fois le paiement est valide, le client sera redirigé vers la page de conversation avec le uber 'Anya' en fonction du point de destination. Les points rouges ont été mit en dure dans une vue map.dart, chaque point est prédéfini d'un nom d'uber d'où on trouvera le nom de cet uber dans la conversation en tant que 'title' dans la collection 'conversations' dans firebase.
+- **Google map && Paiement** : Le client peut choisir un point de repère (points rouges) sur le map, une fois cliquer sur un des points rouges, ça affiche le pop-up du paiement. Une fois le paiement est valide, le client sera redirigé vers la page de conversation avec le uber 'Anya' en fonction du point de destination. Les points rouges ont été mit en dure dans une vue map.dart, chaque point est prédéfini d'un nom d'uber d'où on trouvera le nom de cet uber dans la conversation.
 ![image](https://github.com/Omma-Habiba/Uberefrei_flutter/assets/76633646/3c8286f2-691f-4a67-8cb9-e713c2f895a1)
 ![image](https://github.com/Omma-Habiba/Uberefrei_flutter/assets/76633646/3e4e2670-9a78-4239-b649-790b350075d3)
 
