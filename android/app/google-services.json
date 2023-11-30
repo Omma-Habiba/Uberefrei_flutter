@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "913777239136",
+    "project_id": "uberefrei",
+    "storage_bucket": "uberefrei.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913777239136:android:5a3ea43049d08b18cbcf05",
+        "android_client_info": {
+          "package_name": "com.example.eferei2023gr109"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY13CmmK8FD7kfEcgUMcZ1G_0D7-dYT-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
