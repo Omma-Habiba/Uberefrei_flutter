@@ -1,36 +1,48 @@
-# UberEfrei Flutter APP
+<h1 align="center">
+  UberEfrei Flutter APP 🦄
+</h1>
 
-UberEfrei is an application for communication between clients and Uber drivers. It allows users to select a destination on Google Maps and proceed with payment.
+UberEfrei est une application de communication entre le client ('users' dans firebase) et les chauffeurs Uber ('ubers' dans firebase). 
+Le client peut également accéder au google map et choisir un point de destination (parmis les points rouges affichés sur le map), puis accéder au paiement et peut être rediriger vers la page de messagerie avec son uber.
 
-## Group Members
-- Omma
-- Faiza
-- Ines
+## Membres du groupe
+- Omma Habiba BIPLOB
+- Faiza AKABLI
+- Ines BOUHRAOUA
 
-## Features
+## Fonctionnalités 🦊
 
-### User (Client)
-- **Destination Selection**: Users can choose their destination using the integrated Google Maps.
-- **Communication with Driver**: Users can interact with drivers through the platform.
-- **Secure Payment**: Users can securely make payments for services.
+### Home page avec deux choix : Client && Uber 
 
-### Driver (Uber)
-- **Request Reception**: Drivers can receive and accept user requests.
-- **Navigation to Destination**: Drivers have access to navigation to the destination chosen by the user.
-- **Communication with User**: Drivers can communicate with users for updates on arrival time, routes, etc.
+![image](https://github.com/Omma-Habiba/Uberefrei_flutter/assets/76633646/df839446-13d7-4348-9cb2-625915eed90d)
 
-## Screenshots
-Insert screenshots here to illustrate the application's appearance and features.
 
-## Technology Used
-- **Flutter**: Cross-platform mobile application development framework.
-- **Firebase**: Mobile and web application development platform.
+### Connecté en tant que Client Ochaco
 
-## Usage Instructions
-1. Clone the project repository.
-2. Install Flutter on your machine if not already done.
-3. Install dependencies by running `flutter pub get`.
-4. Launch the application using `flutter run`.
+![image](https://github.com/Omma-Habiba/Uberefrei_flutter/assets/76633646/72f900c7-26c9-44aa-b7b8-dbadb51a1449)
 
-## Notes
-This project was developed as part of a course/personal project/etc. Add any relevant information about the project, its objectives, or development here.
+- **Personnes** : Affichage des ubers avec qui le client peut communiquer
+![image](https://github.com/Omma-Habiba/Uberefrei_flutter/assets/76633646/f9e73dc8-aab4-4af8-9276-1e3c9c64bf2e)
+
+- **Google map && Paiement** : Le client peut choisir un point de repère (points rouges) sur le map, une fois cliquer sur un des points rouges, ça affiche le pop-up du paiement. Une fois le paiement est valide, le client sera redirigé vers la page de conversation avec un uber en fonction du point de destination. Les points rouges ont été mit en dure dans une vue map.dart, chaque point est prédéfini d'un nom d'uber d'où on trouvera le nom de cet uber dans la conversation en tant que 'title' dans la collection 'conversations' dans firebase.
+![image](https://github.com/Omma-Habiba/Uberefrei_flutter/assets/76633646/3c8286f2-691f-4a67-8cb9-e713c2f895a1)
+
+  
+### Connecté en tant que Uber
+- Quand on est connecté en tant que Uber, on est redirigé directement vers la conversation avec le client qui a payé la réservation sur google map.
+![image](https://github.com/Omma-Habiba/Uberefrei_flutter/assets/76633646/ad6a1fc7-34a8-414f-bc34-c61cd452b206)
+
+### Conversation 
+- La conversation se fait entre le client et le uber et ça s'enregistre dans la bases de données firebase dans la collection 'conversations'. Pour tester ça, il faut être connecter sur deux téléphones, un en tant que client, l'autre en tant que uber.
+- **Particularité** : Lorsqu'un client ou un uber reçoit un message, il est obligé de partir de la conversation puis revenir dans la conversation afin de voir le nouveau message.
+
+## Technologie utilisée
+- **Flutter 3.16.0** : Framework de développement d'applications mobiles multiplateformes.
+- **Dart 3.2.0** 
+- **Firebase** : Plateforme de développement d'applications mobiles et web.
+
+## Instructions d'utilisation
+1. Cloner le repository du projet.
+2. Installer Flutter sur votre machine si ce n'est pas déjà fait.
+3. Installer les dépendances en exécutant `flutter pub get`.
+4. Lancer l'application en utilisant `flutter run`.
