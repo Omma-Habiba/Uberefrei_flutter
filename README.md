@@ -5,11 +5,6 @@
 UberEfrei est une application de communication entre le client ('users' dans firebase) et les chauffeurs Uber ('ubers' dans firebase). 
 Le client peut également accéder au google map et choisir un point de destination (parmis les points rouges affichés sur le map), puis accéder au paiement et peut être rediriger vers la page de messagerie avec son uber.
 
-## Membres du groupe
-- Omma Habiba BIPLOB
-- Faiza AKABLI
-- Ines BOUHRAOUA
-
 ## Fonctionnalités 🦊
 
 ### Home page avec deux choix : Client && Uber 
